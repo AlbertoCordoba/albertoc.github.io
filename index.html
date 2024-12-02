@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Córdoba Dev</title>
+
+    <!--==== Keywords ====-->
+    <meta content="Programacion, Programador, Alberto, Córdoba, Alberto, Paginas web, desarrollador de sofware, full stack, front-end, back-end, diseño web, desarrollador web, bases de datos, Programming, Programmer, Web pages, software developer, full stack, front-end, back-end, web design, web developer, databases, dev, html, js, css, taildwind, mongodb, sql, mysql, react, boostrap, node js," name="keywords">
+
+    <meta content="La pagina web del portafolio de Alberto Córdoba Ruiz, un estudiante de 4º de Ingenieria Informática" name="description">
+    
+    <meta content="Alberto Córdoba Ruiz" name="author">
+
+    <!--====== Icons ======-->
+    <script src="https://kit.fontawesome.com/4850cd74ae.js" crossorigin="anonymous"></script>
+
+    <!--===========
+        Styles
+    ============-->
+    
+    <link href="main.css" rel="stylesheet">
+    
+    <link rel="icon" href="resources/img/favicon.webp">
+
+</head>
+
+<!--====================================================================================================-->
+
+<body>
+
+    <!--==== Background Video ====-->
+
+    <video autoplay loop muted id="backgroundVideo">
+        <source src="resources/video/Main_Background.mp4" type="video/mp4">
+        " Tu navegador no soporta la etiqueta video. "
+    </video>
+
+
+    <!--====== Button Mobile Nav ======-->
+
+    <button type="button" id="mobileNavBtn2">
+        <i id="menuIcon" class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    
+
+    <!--==================
+            Header
+    ===================-->
+
+    <header class="header" id="header">
+        <div class="container-logo">
+            <h2 class="header-logo">Alberto Córdoba Dev</h2>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li class="nav__ul__li menu-active">
+                    <a href="#intro" class="li__a" data-section="navBar" data-value="Inicio">Inicio</a>
+                </li>
+                <li class="nav__ul__li">
+                    <a href="#about" class="li__a" data-section="navBar" data-value="Sobre mi">Sobre mi</a>
+                </li>
+                <li class="nav__ul__li">
+                    <a href="#skills" class="li__a" data-section="navBar" data-value="Habilidades">Habilidades</a>
+                </li>
+                <li class="nav__ul__li">
+                    <a href="#proyects" class="li__a" data-section="navBar" data-value="Proyectos">Proyectos</a>
+                </li>
+                <li class="nav__ul__li btn-contactme">
+                    <a href="#contact" class="li__a" data-section="navBar" data-value="Contactame">Contactame</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flags-container">
+        <button id="btnLeng">
+            <i class="fa-solid fa-chevron-left" id="lengI"></i>
+        </button>
+        <div id="flags-container">
+            <div data-language="es">
+                <img src="resources/img/es.svg" alt="Idioma Español">
+            </div>
+            <div data-language="en">
+                <img src="resources/img/gb.svg" alt="English Language">
+            </div>
+        </div>
+    </div>
+
+
+    <!--========================
+            Section: Intro
+    =========================-->
+
+    <section id="intro">    
+        <div class="intro-container">
+            <h2 data-section="intro" data-value="nombre">¡Hola, Soy <span id="introName">Alberto Córdoba</span>!</h2>
+            <div class="textW-container">
+                <span class="text-writer textW-First" data-section="intro" data-value="nombre1">Soy</span>
+                <span class="text-writer textW-Second" data-section="intro" data-value="nombre2"> un Estudiante</span>
+            </div>
+            <h4 class="intro-to-me" data-section="intro" data-value="intro me">
+                de Ingeniería Informatica<span class="stack"></span><br><span class="stack">en la intensificacion de TI</span>
+            </h4>
+            <div class="btn__intro-container">
+                <a href="resources/AlbertoCórdobaCV.pdf" download="Alberto Córdoba CV" class="btn__intro" data-section="intro" data-value="CV">Descargar CV</a>
+                <a href="#contact" class="btn__intro" data-section="intro" data-value="contact">Contactame</a>
+            </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo-myself">
+                <img src="resources/img/myself-removebg.png" alt="Foto de Alberto Córdoba">
+            </div>
+            <div class="open-work">
+                <a href="https://www.linkedin.com/in/alberto-c-50151811b/" target="_blank" class="btn__intro btn__large" data-section="intro" data-value="work">Disponible para trabajar</a>
+            </div>
+        </div>
+        <button id="btnScroll"><i class="fa-solid fa-chevron-down"></i></button>
+    </section>
+
+
+
+    <!--========================
+            Section: About
+    =========================-->
+
+    <section id="about">
+        <h3 class="about__h3" data-section="about" data-value="title">Sobre Mi</h3>
+        <div class="about__div">
+            <p class="div__p-1" data-section="about" data-value="textA1">   Soy estudiante de 4º curso de Ingeniería Informática en la Universidad de Castilla-La Mancha, en Ciudad Real, con una especialización en Tecnologías de la Información. Apasionado por el desarrollo de software y las innovaciones tecnológicas, me interesa especialmente el impacto de la informática en la sociedad actual.</p>
+            <p class="div__p-2" data-section="about" data-value="textA2">
+                A lo largo de mi formación, he adquirido habilidades en programación, bases de datos y gestión de proyectos, lo que me permite abordar desafíos complejos de manera efectiva. Siempre estoy en busca de oportunidades para aprender y crecer en este dinámico campo.</p>
+        </div>
+    </section>
+
+
+
+    <!--===========================
+            Section: Skills
+    ============================-->
+
+    <section id="skills">
+        <h3 class="skills__h3" data-section="skills" data-value="title">Habilidades</h3>
+        <div class="skills__div">
+            <div class="skill-type">
+                <h4>Front-End</h4>
+                <div class="skill-type__div">
+                    <div class="skill-box">
+                        <img src="resources/img/html-5.png" alt="Hablidad HTML">
+                        <div class="skillInfo-bar"><p>HTML</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/css-3.png" alt="Habilidad CSS">
+                        <div class="skillInfo-bar"><p>CSS</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/js.png" alt="Hablidad javaScript">
+                        <div class="skillInfo-bar"><p>JS</p></div>
+                    </div>
+                </div>
+                </div>
+                <div class="skill-type">
+                <h4 data-section="skills" data-value="database">Back-End Y Bases de datos</h4>
+                <div class="skill-type__div">
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Habilidad Python" width="100" height="100">
+                        <div class="skillInfo-bar"><p>Python</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Habilidad Java" width="100" height="100">
+                        <div class="skillInfo-bar"><p>Java</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Habilidad C#" width="100" height="100">
+                        <div class="skillInfo-bar"><p>C#</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://img.icons8.com/color/48/000000/xaml.png" alt="Habilidad XAML" width="100" height="100">
+                        <div class="skillInfo-bar"><p>XAML</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/VB.NET_Logo.svg" alt="Habilidad Visual Basic.NET" width="100" height="100">
+                        <div class="skillInfo-bar"><p>VB.NET</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/MongoDB.png" alt="Hablidad MongoDB  ">
+                        <div class="skillInfo-bar"><p style="font-size: .9rem;">MongoDB</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/mysql.png" alt="Hablidad Mysql">
+                        <div class="skillInfo-bar"><p>Mysql</p></div>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="skill-type">
+                <h4 data-section="skills" data-value="other">Otras</h4>
+                <div class="skill-type__div">
+                    <div class="skill-box">
+                        <img src="resources/img/Git.png" alt="Hablidad Git">
+                        <div class="skillInfo-bar"><p>GIT</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/VS Code.png" alt="Hablidad Visual Studio Code">
+                        <div class="skillInfo-bar"><p>VS Code</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png" alt="Habilidad Oracle">
+                        <div class="skillInfo-bar"><p>Oracle</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eclipse-Luna-Logo.svg" alt="Habilidad Eclipse">
+                        <div class="skillInfo-bar"><p>Eclipse</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" alt="Habilidad Visual Studio">
+                        <div class="skillInfo-bar"><p>Visual Studio</p></div>
+                    </div>
+                    <div class="skill-box">
+                        <img src="resources/img/Blend_For_Visual_Studio_logo.png" alt="Habilidad Blend Visual">
+                        <div class="skillInfo-bar"><p>Blender Visual</p></div>
+                    </div>
+                </div>
+                </div>
+                <div class="soft-skills">
+                <h4 data-section="skills" data-value="softT">Habilidades Blandas</h4>
+                <div>
+                    <ul data-section="skills" data-value="softP">
+                        <li>Adaptabilidad</li>
+                        <li>Pensamiento critico</li>
+                        <li>Aprendizaje Veloz</li>
+                        <li>Compromiso</li>
+                        <li>Comunicación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Creatividad</li>
+                        <li>Responsabilidad</li>
+                        <li>Puntualidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--============================
+            Section: Proyects
+    =============================-->
+
+
+    <section id="proyects">
+        <h3 class="proyects__h3" data-section="projects" data-value="title">Proyectos Destacados</h3>
+        <div class="proyects-container">
+            <div class="proyect-box">
+                <img src="resources/proyects/Comunidad.webp" alt="Foto del proyecto Comunidad Vecinos">
+                <div class="proyects__scrollBar" id="ScrollBar-1">
+                    <h4>Comunidad vecinos</h4>
+                    <button class="extra-view" id="btnExV-1" data-section="projects" data-value="seeMore">Ver mas...</button>
+                    <button class="extra-view" id="btnExV-01" style="display: none;" data-section="projects" data-value="seeLess">Ver Menos...</button>
+                    <div class="tech-box">
+                        <div class="item__tech-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Desarrollado con Java">
+                        </div>
+                    </div>
+                    <div class="link-web"><a href="https://github.com/AlbertoCordoba/Comunidad-vecinos" target="_blank">Comunidad Vecinos</a></div>
+                    <p data-section="projects" data-value="IntroPage">Esta es mi proyecto, de prog1 para la gestion de una comunidad de vecinos</p>
+                </div>
+            </div>
+
+            <div class="proyect-box">
+                <img src="resources/proyects/Blockchain.jpeg" alt="Foto del proyecto Blockchain BBDD">
+                <div class="proyects__scrollBar" id="ScrollBar-2">
+                    <h4>Blockchain BBDD</h4>
+                    <button class="extra-view" id="btnExV-2" data-section="projects" data-value="seeMore">Ver mas...</button>
+                    <button class="extra-view" id="btnExV-02" style="display: none;" data-section="projects" data-value="seeLess">Ver Menos...</button>
+                    <div class="tech-box">
+                        <div class="item__tech-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Desarrollado con Python">
+                        </div>
+                    </div>
+                    <div class="link-web"><a href="https://github.com/AlbertoCordoba/BlockchainBBDD_C-rdoba_Delgado" target="_blank">Blockchain BBDD</a></div>
+                    <p data-section="projects" data-value="IntroPage">Este es mi proyecto para GSI, en el que realizamos una Blockchain como BBDD.</p>
+                </div>
+            </div>
+            <div class="proyect-box">
+                <img src="resources/proyects/Pokemon.webp" alt="Foto del proyecto IPOKemon">
+                <div class="proyects__scrollBar" id="ScrollBar-3">
+                    <h4>IPOkemon</h4>
+                    <button class="extra-view" id="btnExV-3" data-section="projects" data-value="seeMore">Ver mas...</button>
+                    <button class="extra-view" id="btnExV-03" style="display: none;" data-section="projects" data-value="seeLess">Ver Menos...</button>
+                    <div class="tech-box">
+                        <div class="item__tech-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Desarrollado con C#">
+                        </div>
+                        <div class="item__tech-box">
+                            <img src="https://img.icons8.com/color/48/000000/xaml.png" alt="Desarrollado con XAML">
+                        </div>
+                    </div>
+                    <div class="link-web"><a href="https://github.com/AlbertoCordoba/IPOKemon" target="_blank">IPOKemon</a></div>
+                    <p data-section="projects" data-value="IntroPage">Proyecto de IPO en el cual creamos nuestros pokemons y un juego pokedex... con ellos</p>
+                </div>
+            </div>
+            <div class="proyect-box">
+                <img src="resources/proyects/Concierto.jpeg" alt="Foto del proyecto BBDD Concierto">
+                <div class="proyects__scrollBar" id="ScrollBar-4">
+                    <h4>BBDD Concierto</h4>
+                    <button class="extra-view" id="btnExV-4" data-section="projects" data-value="seeMore">Ver mas...</button>
+                    <button class="extra-view" id="btnExV-04" style="display: none;" data-section="projects" data-value="seeLess">Ver Menos...</button>
+                    <div class="tech-box">
+                        <div class="item__tech-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Desarrollado con C#">
+                        </div>
+                        <div class="item__tech-box">
+                            <img src="https://img.icons8.com/color/48/000000/xaml.png" alt="Desarrollado con XAML">
+                        </div>
+                        <div class="item__tech-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/VB.NET_Logo.svg" alt="Desarrollado con VisualBasic.NET">
+                        </div>
+                        <div class="item__tech-box">
+                            <img src="resources/img/mysql.png" alt="Desarrollado con MySQL">
+                        </div>
+                       
+                    </div>
+                    <div class="link-web"><a href="https://github.com/AlbertoCordoba/BBDDConcierto" target="_blank">BBDD Concierto</a></div>
+                    <p data-section="projects" data-value="IntroPage">Proyecto de BBDD en el cual hicimos una BBDD con los conciertos de bandas y donde se iban a realizar y que canciones se tocarian</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--============================
+            Section: Contact
+    =============================-->
+
+
+    <section id="contact">
+        <h3 class="contact__h3" data-section="contact" data-value="title">Contactame</h3>
+        <div id="divForm">
+            <form id="contactForm">
+                <div class="form__div" id="nameDiv">
+                    <label class="form__input"><span data-section="contact" data-value="lbName">Nombre</span>
+                        <input type="text" class="form__input" id="nameForm" placeholder="Escribe tu nombre" name="name" minlength="4" maxlength="26" required>
+                    </label>
+                </div>
+                <div class="form__div" id="messageDiv">
+                    <label class="form__input"><span data-section="contact" data-value="consul">Tu consulta</span>
+                        <textarea name="message" id="messageForm" rows="7" minlength="0" maxlength="500" placeholder="Deja tu mensaje..." required></textarea>
+                    </label>
+                </div>
+                <button class="btn__form" id="btnNext1" data-section="contact" data-value="btn1">Siguiente</button>
+                <button class="btn__form" id="btnNext2" style="display: none;" data-section="contact" data-value="btn1">Siguiente</button>
+                <button type="submit" class="btn__form" id="btnConfirm" style="display: none;" data-section="contact" data-value="btnC">Confirmar</button>
+                <div class="feedback" id="result1"></div>
+                <div class="feedback" id="result2"></div>
+                <div class="feedback" id="result3"></div>
+                <div id="resultFinal" style="display: none;"></div>
+            </form>
+        </div>
+    
+        <div class="contact-link-container">
+            <div class="contact-link link-2">
+                <a href="https://github.com/AlbertoCordoba" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="contact-link link-3">
+                <a href="https://www.linkedin.com/in/alberto-c-50151811b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!--=================
+            Footer      
+    ==================-->
+    
+    <footer id="footer">
+        <div class="footer__div">
+            <div class="footer__div__div">
+                <div class="footer-logo">
+                    <img src="resources/img/favicon.webp" alt="">
+                </div>
+                <div class="btn__intro-container footer__btn">
+                    <a href="resources/AlbertoCórdobaCV.pdf" download="Alberto Córdoba CV" class="btn__intro" data-section="intro" data-value="CV">Descargar CV</a>
+                </div>
+            </div>
+            <div class="footer__div__div">
+                <h4 data-section="footer" data-value="seccion">Secciones</h4>
+                <ul>
+                    <li><a href="#intro" data-section="navBar" data-value="Inicio">Inicio</a></li>
+                    <li><a href="#skills" data-section="navBar" data-value="Habilidades">Habilidades</a></li>
+                    <li><a href="#proyects" data-section="navBar" data-value="Proyectos">Proyectos</a></li>
+                    <li><a href="#contact" data-section="navBar" data-value="Contactame">Contactame</a></li>
+                </ul>
+            </div>
+            <div class="footer__div__div">
+                <h4 data-section="footer" data-value="contact">Contactame</h4>
+                <div>
+                    <p><i class="fa-regular fa-envelope"></i> alberto.cordoba1@alu.uclm.es</p>
+                </div>
+                <div class="mini-cntLink-container">
+                    <div class="contact-link mini-cntLink">
+                        <a href="https://www.linkedin.com/in/alberto-c-50151811b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="contact-link mini-cntLink">
+                        <a href="https://github.com/AlbertoCordoba" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong>Alberto Córdoba Dev</strong>. All Rights Reserved
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!--====== Back To Top ======-->
+
+
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
+
+
+<!--===================== 
+        Mobile Nav 
+======================-->
+
+    <nav id="mobile-nav">
+        <ul class="" style="touch-action: pan-y;" id="">
+            <li class="menu-active">
+              <a href="#intro" class="movile-nav__a" data-section="navBar" data-value="Inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#about" class="movile-nav__a" data-section="navBar" data-value="Sobre mi">Sobre mi</a>
+            </li>
+            <li>
+                <a href="#skills" class="movile-nav__a" data-section="navBar" data-value="Habilidades">Habilidades</a>
+            </li>
+            <li>
+                <a href="#proyects" class="movile-nav__a" data-section="navBar" data-value="Proyectos">Proyectos</a>
+            </li>
+            <li>
+                <a href="#contact" class="movile-nav__a" data-section="navBar" data-value="Contactame">Contactame</a>
+            </li>
+        </ul>
+      </nav>
+    <div id="mobile-body-overly" style="display: none;"></div>
+
+
+    <!--========================
+            javaScripts
+             JQueries
+    =========================-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
